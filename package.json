@@ -1,5 +1,4 @@
 {
-  "homepage": "https://hemantkrjain.github.io/my-app",
   "name": "textutils",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +18,8 @@
     "url": "https://github.com/sonyzach/usfm-validator.git"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start   ",
     "build": "react-scripts build",
     "test": "react-scripts test",
